@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Bootstrap Sample with Google Analytics</title>
-  <!-- Bootstrap CSS CDN -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
- <!-- Google tag (gtag.js) -->
+  <title>Mohsin</title>
+   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XBC32LNNMK"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -16,65 +30,839 @@
   gtag('config', 'G-XBC32LNNMK');
 </script>
 </head>
+
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFSTCH35"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+  <!-- header -->
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <header  class="nav-color">
+    <div>
+      <div class="container">
+          <div class="nevigation-wrap">
+            <nav class="navbar navbar-expand-lg">
+              <div class="logo">
+                <img src="logo-dark.png" alt="img-logo">
+              </div>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">SERVICES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">FEATURES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">PRICING</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">APPLICATION</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">TEAM</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT</a>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">Login</button>
+                  </li>
+                </ul>
+              </div>
+
+            </nav>
+          </div>
+
+        </div>
+    </div>
+  </header>
+
+  <!-- Banner tage start -->
+  <div class="banner">
     <div class="container">
-      <a class="navbar-brand" href="#">Your Website</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+      <div class="row">
+        <div class="col-md-7">
+          <div class="banner-set">
+            <i class="fa-solid fa-mobile-screen"></i>
+            <h1>
+              Perfect app landing page for your app.
+            </h1>
+            <p>
+              Explore kotona's online payment service and make a difference in your customers'
+              service experiences.increase productivity with a simple to-do app.
+            </p>
+            <button class="btn" type="button">Read More</button>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <span>Welcome to styza &#128129</span>
+          <div class="banner-mobile-img">
+            <img src="phone.png" alt="imgPhone">
+          </div>
+        </div>
 
-  <div class="container mt-4">
-    <h1>Welcome to Your Website</h1>
-    <p>This is a sample HTML page using Bootstrap with Google Analytics integration.</p>
-    
-    <!-- Additional Content -->
-    <div class="row">
-      <div class="col-md-6">
-        <h3>About Me</h3>
-        <p>Hi, I'm Muhsin Bukhari, a digital marketing and SEO expert passionate about helping businesses grow online.</p>
-      </div>
-      <div class="col-md-6">
-        <img src="https://images.pexels.com/photos/533562/pexels-photo-533562.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Placeholder Image" class="img-fluid">
       </div>
     </div>
-    
-    <div class="row mt-4">
-      <div class="col-md-12">
-        <h3>Services Offered</h3>
-        <p>I offer a range of services including SEO optimization, content marketing, social media strategy, and more to enhance your online presence.</p>
-      </div>
-    </div>
-    
-    <!-- End of Additional Content -->
   </div>
 
-  <!-- Bootstrap JS and jQuery CDN -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- 2nd part How can help you ! -->
+
+  <div class="what-we-do">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-8 col-md-12 col-lg-12 ">
+          <div class="content1st">
+            <h6>What We Do?</h6>
+            <h1>How can help you!</h1>
+            <p>A Private Limited is the most popular type of Partnership Malta. The limited liability
+              is, in fact, the only type of company allowed by companies.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 ">
+          <div class="card1">
+            <i class="fa-solid fa-shield-halved"></i>
+            <img src="bomb.png" alt="imgbomb">
+            <h3>Fully Secured</h3>
+            <p>We use a customized application specifically designed a testing gnose to keep away for people. </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card2">
+            <i class="fa-solid fa-lightbulb"></i>
+            <img src="bomb.png" alt="imgbomb ">
+            <h3>Creative Idea</h3>
+            <p>We use a customized application specifically designed a testing gnose to keep away for people. </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card3">
+            <i class="fa-regular fa-square"></i>
+            <img src="bomb.png" alt="imgbomb">
+            <h3>Deasign & Brading</h3>
+            <p>We use a customized application specifically designed a testing gnose to keep away for people. </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 3rd part start -->
+
+  <div class="apptech">
+    <div class="container">
+      <div class="row">
+       
+        <div class="col-sm-8 col-md-12 col-lg-12 ">
+          <div class="features">
+            <h6>AppTech Features</h6>
+            <h1>Features for our app</h1>
+            <p>A Private Limited is the most popular type of Partnership Malta. The limited liability
+              is, in fact, the only type of company allowed by companies.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="features-btn">
+        <button class="gradientcolor" type="button">Top Features</button>
+        <button type="button">Smart Features</button>
+      </div>
+      <div class="mobiledesign">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-lg-4 col-xl-4">
+            <ul class="list1st">
+              <li>
+                <i class="fa-regular fa-message"></i>
+                <h4>Responsive Design</h4>
+                <p>In order to design a mobile app that is going to be module downloaded. </p>
+              </li>
+              <li>
+                <i class="fa-solid fa-rotate"></i>
+                <h4>Cool Features</h4>
+                <p>In order to design a mobile app that is going to be module downloaded. </p>
+              </li>
+              <li>
+                <i class="fa-solid fa-eye-dropper"></i>
+                <h4>Lifetime Support</h4>
+                <p>In order to design a mobile app that is going to be module downloaded. </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-12 col-sm-12 col-lg-4 col-xl-4">
+            <img src="phone.png" alt="phoneimg">
+          </div>
+          <div class="col-md-12 col-sm-12 col-lg-4 col-xl-4">
+            <ul class="list2nd">
+              <li>
+                <i class="fa-solid fa-circle-radiation"></i>
+                <h4>Stunning Design</h4>
+                <p>In order to design a mobile app that is going to be module downloaded. </p>
+              </li>
+              <li>
+                <i class="fa-brands fa-dropbox"></i>
+                <h4>Best PSD Pack</h4>
+                <p>In order to design a mobile app that is going to be module downloaded. </p>
+              </li>
+              <li>
+                <i class="fa-solid fa-flask"></i>
+                <h4>Creative Idea</h4>
+                <p>In order to design a mobile app that is going to be module downloaded. </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 4th part start -->
+
+  <div class="slidefirst">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-sm-8 col-md-12 col-lg-4 ">
+          <div class="client-slide">
+            <h6> client Testimonial <i class="fa-solid fa-mobile-screen"></i> </h6>
+            <h2>What they think of us !</h2>
+            <p>A private Limited is the most popular type of partnership Malta. The Limited liability is in, fact the
+              only
+              type of company allowed by companies. </p>
+            <button class="arrowbtn" type="button">Read More Testimonial <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-sm-8 col-md-10 col-lg-8">
+          <div class="slide-complete">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="shadow">
+                <div class="row">
+                  <div class="col-sm-5">
+                    <img class="imgsize" src="Eiffel towner.jpg" alt="img">
+                  </div>
+                  <div class="col-sm-7">
+                <div class="blockcontainer">
+                  <div class="flexblock">
+                    <img class="circulerimg"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTVPl1EhNKlBnSo1mHRcEekQfybO40IF-mew&usqp=CAU"
+                      alt="img">
+                    <span>Review By Freanki Fabel <br>28 jan, 2021 10:25AM</span>
+                  </div>
+                  <h3>Easy and Perfect solution</h3>
+                  <p>Start working with styza that can provide everything you need to generate awareness, drive
+                    traffic,connect. </p>
+                  <button class="btnss" type="button">+ Follow</button>
+                </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="swiper-slide">
+                <div class="shadow">
+                <div class="row">
+                  <div class="col-sm-5">
+
+                    <img class="imgsize" src="Eiffel towner.jpg" alt="img">
+                  </div>
+                  <div class="col-sm-7">
+                <div class="blockcontainer">
+                  <div class="flexblock">
+                    <img class="circulerimg"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTVPl1EhNKlBnSo1mHRcEekQfybO40IF-mew&usqp=CAU"
+                      alt="img">
+                    <span>Review By Freanki Fabel <br>28 jan, 2021 10:25AM</span>
+                  </div>
+                  <h3>Easy and Perfect solution</h3>
+                  <p>Start working with styza that can provide everything you need to generate awareness, drive
+                    traffic,connect. </p>
+                  <button class="btnss" type="button">+ Follow</button>
+                </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="shadow">
+                <div class="row">
+                  <div class="col-sm-5">
+                    <img class="imgsize" src="Eiffel towner.jpg" alt="img">
+                  </div>
+                  <div class="col-sm-7">
+                <div class="blockcontainer">
+                  <div class="flexblock">
+                    <img class="circulerimg"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTVPl1EhNKlBnSo1mHRcEekQfybO40IF-mew&usqp=CAU"
+                      alt="img">
+                    <span>Review By Freanki Fabel <br>28 jan, 2021 10:25AM</span>
+                  </div>
+                  <h3>Easy and Perfect solution</h3>
+                  <p>Start working with styza that can provide everything you need to generate awareness, drive
+                    traffic,connect. </p>
+                  <button class="btnss" type="button">+ Follow</button>
+                </div>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+            <!-- pricing plan part 5th -->
+    <div class="pricing-plan">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-sm-8 col-md-12 col-lg-12">
+            <div class="pricing-head">
+            <h6>What's Your price!</h6>
+            <h1>Pricing plans!</h1>
+            <p>A private Limited is the most popular type of partnership Malta.
+              The Limited liability is, in fact, the only type of company allowed by companies. 
+            </p>
+          </div>
+          </div>
+        </div>
+        
+        <div class="pricing-list">
+          <div class="row align-items-center">
+              <div class="col-sm-12 col-md-7 col-lg-4 mb-4">
+                <div class="card h-100 shadow-lg">
+                  <div class="card-body">
+                    <div class="text-center" >
+                      <h5 class="card-title" >Basic</h5>
+                      <div class="month">
+                      <span class="h2" style="font-weight: 700;font-size: 3rem;"><sup style="font-size: 1.5rem;">$</sup>09</span><sup class="sup-month">/month</sup>
+                    </div>
+                    </div>
+                    <span>
+                    <p>17 to 19 user</p>
+                    <p>For more businesses that want to optimize web query</p>
+                  </span>
+                    
+                  </div>
+                 <ul>
+                  <li><i class="fa-regular fa-circle-check"></i> 2 App and project </li>
+                  <li><i class="fa-regular fa-circle-check"></i> 400 Gb/s storage</li>
+                  <li><i class="fa-regular fa-circle-check"></i> Free coustom domain</li>
+                  <li><i class="fa-regular fa-circle-xmark"></i> Chat Support</li>
+                  <li><i class="fa-regular fa-circle-xmark"></i> No transaction fees</li>
+                  <li><i class="fa-regular fa-circle-xmark"></i> Unlimited storage</li>
+
+                </ul>
+                <button class="list-btn1" type="button"><i class="fa-solid fa-check-double"></i>your plane</button> 
+                </div>
+              </div>
+
+              
+              <div class="col-sm-12 col-md-7 col-lg-4 mb-4">
+                <h4>Recommended For You</h4>
+                <div class="card h-100 shadow-lg">
+                  <div class="card-body" style="border-top-left-radius: 0px; border-top-right-radius: 0px;">
+                    <div class="text-center" >
+                      <h5 class="card-title2" >StartUp</h5>
+                      <div class="month">
+                      <span class="h2" style="font-weight: 700;font-size: 3rem;"><sup style="font-size: 1.5rem;">$</sup>19</span><sup class="sup-month">/month</sup>
+                    </div>
+                    </div>
+                    <span>
+                    <p>17 to 19 user</p>
+                    <p>For more businesses that want to optimize web query</p>
+                  </span>
+                    
+                  </div>
+                 <ul>
+                  <li><i class="fa-regular fa-circle-check"></i> 2 App and project </li>
+                  <li><i class="fa-regular fa-circle-check"></i> 400 Gb/s storage</li>
+                  <li><i class="fa-regular fa-circle-check"></i> Free coustom domain</li>
+                  <li><i class="fa-regular fa-circle-check"></i> Chat Support</li>
+                  <li><i class="fa-regular fa-circle-xmark"></i> No transaction fees</li>
+                  <li><i class="fa-regular fa-circle-xmark"></i> Unlimited storage</li>
+
+                </ul>
+                <button class="list-btn1122" type="button"><i class="fa-solid fa-check-double"></i>Buy Now</button>
+                 
+                </div>
+              </div>
+
+
+              <div class="col-sm-12 col-md-7 col-lg-4 mb-4">
+                <div class="card h-100 shadow-lg">
+                  <div class="card-body">
+                    <div class="text-center" >
+                      <h5 class="card-title3" >Enterprise</h5>
+                      <div class="month">
+                      <span class="h2" style="font-weight: 700;font-size: 3rem;"><sup style="font-size: 1.5rem;">$</sup>29</span><sup class="sup-month">/month</sup>
+                    </div>
+                    </div>
+                    <span>
+                    <p>17 to 19 user</p>
+                    <p>For more businesses that want to optimize web query</p>
+                  </span>
+                    
+                  </div>
+                 <ul>
+                  <li><i class="fa-regular fa-circle-check"></i> 2 App and project </li>
+                  <li><i class="fa-regular fa-circle-check"></i> 400 Gb/s storage</li>
+                  <li><i class="fa-regular fa-circle-check"></i> Free coustom domain</li>
+                  <li><i class="fa-regular fa-circle-check"></i>Chat Support</li>
+                  <li><i class="fa-regular fa-circle-check"></i>No transaction fees</li>
+                  <li><i class="fa-regular fa-circle-check"></i>Unlimited storage</li>
+
+                </ul>
+                <button class="list-btn1122" type="button"><i class="fa-solid fa-check-double"></i>Buy Now</button>                
+                </div>
+              </div>
+
+              </div>
+      </div>
+      </div>
+    </div>
+
+            <!-- App Screenshort part 6th -->
+      
+            <div class="app-screenshort">
+              <div class="container">
+                <div class="row">
+
+                  <div class="col-sm-8 col-md-12 col-lg-12 ">
+                    <div class="app-looks">
+                    <h6>App Looks like!</h6>
+                    <h1>Our App Screenshots!</h1>
+                    <p>A private Limited is the most popular type of partnership Malta.
+                      The Limited liability is, in fact, the only type of company allowed by companies. 
+                    </p>
+                  </div>
+                  </div>
+                </div> 
+               
+                <div class="slick">
+                  <div class="slick11">
+                <swiper-container class="mySwiper1" pagination="true" pagination-clickable="true" slides-per-view="5"
+                space-between="20px" centered-slides="true">
+                <swiper-slide><img src="4074714.jpg" alt="img" ></swiper-slide>
+                <swiper-slide><img src="4074714 (1).jpg" alt="img"></swiper-slide>
+                <swiper-slide><img src="4074714 (2).jpg" alt="img"></swiper-slide>
+                <swiper-slide><img src="4074714 (4).jpg" alt="img"></swiper-slide>
+                <swiper-slide><img src="4074714 (5).jpg" alt="img"></swiper-slide>
+                <swiper-slide><img src="4074714 (6).jpg" alt="img"></swiper-slide>
+                <swiper-slide><img src="4074714 (7).jpg" alt="img"></swiper-slide>
+                <swiper-slide><img src="4074714 (4).jpg" alt="img"></swiper-slide>
+              </swiper-container> 
+              <div class="frames">
+                <img src="phone-fream.png" alt="img">
+              </div>
+            </div>
+          </div>
+          
+      </div>
+      </div>
+
+      <!-- our TEAM part 7th-->
+      <div class="our-team">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-sm-8 col-md-12 col-lg-12  ">
+              <div class="build-team">
+              <h6>Our Team!</h6>
+              <h1>We are team !</h1>
+              <p>A private Limited is the most popular type of partnership Malta.
+                The Limited liability is, in fact, the only type of company allowed by companies. 
+              </p>
+            </div>
+            </div>
+          </div>
+
+            <div class="card-img">
+              <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <span><p>Cody Fisher/owner</p></span>
+              <div class="box-img">
+            <img src="cody.jpg" alt="img">
+          </div>
+            <div class="icons-img">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <span ><p class="p1">Emily coper/ Desiger</p></span>
+            <div class="box-img">
+          <img src="simmy.jpg" alt="img">
+        </div>
+          <div class="icons-img">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <span><p class="p2">Nick obron/ Developer</p></span>
+          <div class="box-img">
+        <img src="nick (1).jpg" alt="img">
+      </div>
+        <div class="icons-img">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <span><p class="p3">Simmy roy/ Manager</p></span>
+        <div class="box-img">
+      <img src="emily.jpg" alt="img">
+    </div>
+      <div class="icons-img">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+    </div>
+
+  </div>
+</div>  
+     </div>
+    </div>
+
+
+    <!-- transform 8th part -->
+
+    <div class="transform-build">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 ">
+            <div class="transform-body">
+            <h1>Build Your ideal Workspace today.</h1>
+            <p>A private Limited is the most popular type of partnership Malta.
+              The Limited liability is, in fact, the only type of company allowed by companies. 
+            </p>
+            <button class="app-store" type="button"> <i class="fa-brands fa-apple"></i> App Store</button>
+            <button class="google-play" type="button"> <i class="fa-brands fa-google-play"></i> Google Play</button>        
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="transform2">
+            <img src="cta-bg.png" alt="img">
+          </div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+
+    <!-- CONTACT us 9th part -->
+
+    <div class="contact-us">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-sm-8 col-md-12 col-lg-12">
+            <div class="getin">
+            <h4>contact us</h4>
+            <h1>Get in Touch!</h1>
+            <p>A private Limited is the most popular type of partnership Malta.
+              The Limited liability is, in fact, the only type of company allowed by companies. 
+            </p>
+          </div>
+        </div>
+        </div>
+        <div class="support">
+        <div class="row">
+        <div class="col-sm-6 col-md-5 ">
+          <h3>Need Support !</h3>
+          <p>Contact us for a quote, help to join the them </p>
+              <form>
+                <div class="form-row">
+                  <div class="col-md-6">
+                    <div class="form-group"  style="margin-right: 5px;">
+                    <input type="text" class="form-control" placeholder="Your name">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group"style="margin-left: 5px;">
+                    <input type="text"  class="form-control" placeholder="Your email">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Your Subject... ">
+                    </div>
+                  </div>
+                  <div class="col-md-12" >
+                    <textarea name="comments" class="form-control" rows="4" id="comments" placeholder="Your message..."></textarea>
+                  </div>
+                  <div class="col-md-12" >
+                  <button type="button" class="btn">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+              <div class="col-sm-6 col-md-7 ">
+                <!--Google map-->
+                <div class="mapecolor">
+                </div>
+                <div class="col-lg-6 right-image p-r-0">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1619902.0054433027!2d-122.68851282163044!3d37.534535608111824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2sin!4v1507725785789"
+                    width="180%" height="400" frameborder="0" style="border:0" allowfullscreen data-aos="fade-left" data-aos-duration="3000"></iframe>
+                </div>
+        
+        <!--Google Maps-->          
+        
+              </div>
+                
+    </div>
+    </div>
+    <div class="contactpart">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="iconpart">
+            <i class="fa-solid fa-location-dot"></i>
+          
+          <div class="bodytext">
+          <h3>Location</h3>
+          <p>2276 Lynn ogden Lane<br> VIC 3004, Australia</p>
+        </div>
+        </div>
+      </div>
+        <div class="col-md-4">
+          <div class="iconpart">
+          <i class="fa-solid fa-envelope"></i>
+          <div class="bodytext">
+          <h3>Email</h3>
+          <p>info@example.com <br> sale@example.com</p>
+        </div>
+      </div>
+    </div>
+        <div class="col-md-4">
+          <div class="iconpart">
+          <i class="fa-solid fa-phone"></i>
+          <div class="bodytext">
+          <h3>Phone</h3>
+          <p>1800-121-3637 <br> +92 555 234-8765</p>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+    </div>
+
+            <!-- Footer  10th part -->
+
+     <div class="subscribe">
+      <img src="arrow-bg.png" alt="img">
+      <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-md-4 col-lg-4">
+          <div class="logopart">
+          <img src="logo-last.png" alt="imglogo">
+          <h1>TYZA</h1>
+          <p>A private Limited is the most popular type of partnership Malta.
+            The Limited liability is, in fact, the only type of company allowed by companies. 
+          </p>
+           <!-- Facebook -->
+           <a
+           class="btn btn-outline-light btn-floating m-1"role="button">
+           <i class="fa-brands fa-facebook"></i>
+          </a>
+
+        <!-- Twitter -->
+        <a
+           class="btn btn-outline-light btn-floating m-1"role="button">
+           <i class="fa-brands fa-twitter"></i>
+          </a>
+
+            <!-- Google-play -->
+          <a
+          class="btn btn-outline-light btn-floating m-1"role="button">
+          <i class="fa-brands fa-google-play"></i>
+         </a>
+       
+         <!-- Linkedin -->
+        <a
+           class="btn btn-outline-light btn-floating m-1"role="button">
+           <i class="fa-brands fa-linkedin"></i> 
+          </a>
+
+        </div>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <div class="sublist">
+          
+          <ul>
+            <li class="active">
+              Product
+            </li>
+            <li>
+              Features
+            </li>
+            <li>
+              Pricing
+            </li>
+            <li>
+              Get App
+            </li>
+            <li>
+              Contact
+            </li>
+          </ul>
+          </div>
+        </div>
+
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <div class="sublist">
+          
+            <ul>
+              <li class="active">
+                Policies
+              </li>
+              <li>
+                Security & privicy
+              </li>
+              <li>
+                Marketplace
+              </li>
+              <li>
+                Term & condition
+              </li>
+              <li>
+                Collection
+              </li>
+            </ul>
+            </div>
+          </div>
+       
+        <div class="col-sm-3 col-md-4 col-lg-4">
+          <div class="subcribe-last">
+          <h1>subscribe</h1>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="subscribe">
+            <div class="input-group-append">
+              <button class="btn" type="submit">Go</button>  
+             </div>
+          </div>
+          <p>Publishes Will Show up in your subscriptions feed.You may also Smart.</p>
+        </div>
+        </div>
+        
+      </div>
+      </div>
+      </div>
+
+          <!-- Project end name -->
+        <footer>
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="textcenter">
+                                
+            
+        <div class="p-3" style="color: #6F8DA8; padding-right: 155px;">
+          © 2023 Styza Design with
+          <i class="fa-solid fa-heart" style="color: red;"></i> by Arslan
+        </div>
+        </div>
+      </div>
+    
+    </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1.1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+   <script>
+    var swiper = new Swiper(".mySwiper1", {
+      slidesPerView: 5,
+      spaceBetween: 40,
+      breakpoints:{
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        375: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        425: {
+          slidesPerView: 3,
+          spaceBetween: 5,
+        },
+        768: {
+          slidesPerView: 5,
+          spaceBetween: 40,
+        },
+        992: {
+          slidesPerView: 5,
+          spaceBetween: 40,
+        },
+        1200: {
+          slidesPerView: 5,
+          spaceBetween: 40,
+        }
+
+      },
+      
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  
+ 
+
 </body>
+
 </html>
